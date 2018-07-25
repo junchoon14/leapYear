@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,101 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="leapYear" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ER5-6V-E7B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="yxB-j4-Gxh">
+                                <rect key="frame" x="32.666666666666657" y="373" width="310" height="205"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEm-YJ-kUo">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="85" id="2aJ-xF-QbH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="310" id="Kbb-0Y-XM8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- 365 DAYS -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OGL-q9-VTz">
+                                        <rect key="frame" x="38.333333333333343" y="80" width="233.00000000000003" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="1Be-nM-kSd"/>
+                                            <constraint firstAttribute="width" constant="233" id="MK8-TK-dWI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YEAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhT-UE-iDK">
+                                        <rect key="frame" x="68.333333333333343" y="121" width="173" height="84"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="173" id="ifw-Vn-kCI"/>
+                                            <constraint firstAttribute="height" constant="84" id="zs2-lC-Z0n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="70"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgj-1W-8la" userLabel="Year Input Text">
+                                <rect key="frame" x="37.666666666666657" y="191" width="300" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="cz7-iR-a2r"/>
+                                    <constraint firstAttribute="width" constant="300" id="xr7-6X-73H"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YJ-zU-mOJ">
+                                <rect key="frame" x="0.0" y="275" width="375" height="53"/>
+                                <color key="backgroundColor" red="0.51330504440000002" green="0.15480251910000001" blue="0.15433322299999999" alpha="0.42521939212328769" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="40"/>
+                                <color key="tintColor" red="0.51330504440000002" green="0.15480251910000001" blue="0.15433322299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <size key="titleShadowOffset" width="0.5" height="0.5"/>
+                                <state key="normal" title="DISTINGUISH">
+                                    <color key="titleColor" red="0.096605329932994977" green="0.029360443411008279" blue="0.029360443411008279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="distinguishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dMB-gm-kYd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yxB-j4-Gxh" firstAttribute="top" secondItem="1YJ-zU-mOJ" secondAttribute="bottom" constant="45" id="9ra-HY-Hyb"/>
+                            <constraint firstItem="ER5-6V-E7B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CNK-Ah-t8K"/>
+                            <constraint firstItem="hgj-1W-8la" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J0Q-SR-C9V"/>
+                            <constraint firstItem="ER5-6V-E7B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P6u-hG-Vc8"/>
+                            <constraint firstItem="1YJ-zU-mOJ" firstAttribute="top" secondItem="hgj-1W-8la" secondAttribute="bottom" constant="49" id="TfE-db-5BR"/>
+                            <constraint firstItem="1YJ-zU-mOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uuv-zY-EkF"/>
+                            <constraint firstAttribute="bottom" secondItem="ER5-6V-E7B" secondAttribute="bottom" id="XBR-04-URU"/>
+                            <constraint firstItem="ER5-6V-E7B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b1K-f6-kCQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1YJ-zU-mOJ" secondAttribute="trailing" id="bvx-H6-6Bz"/>
+                            <constraint firstItem="yxB-j4-Gxh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kao-9I-3rX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yxB-j4-Gxh" secondAttribute="bottom" constant="200" id="n6M-12-GmN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dayDisplay" destination="OGL-q9-VTz" id="NvV-EV-lXa"/>
+                        <outlet property="yearDisplay" destination="QEm-YJ-kUo" id="JvS-34-ghz"/>
+                        <outlet property="yearText" destination="hgj-1W-8la" id="y2v-vr-Tve"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="35.467980295566505"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="612" height="408"/>
+    </resources>
 </document>
