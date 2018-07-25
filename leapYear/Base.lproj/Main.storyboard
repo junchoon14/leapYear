@@ -37,7 +37,6 @@
                                         <rect key="frame" x="38.333333333333343" y="80" width="233.00000000000003" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="1Be-nM-kSd"/>
-                                            <constraint firstAttribute="width" constant="233" id="MK8-TK-dWI"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,7 +45,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YEAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhT-UE-iDK">
                                         <rect key="frame" x="68.333333333333343" y="121" width="173" height="84"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="173" id="ifw-Vn-kCI"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="173" id="ifw-Vn-kCI"/>
                                             <constraint firstAttribute="height" constant="84" id="zs2-lC-Z0n"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="70"/>
